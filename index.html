@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tcss-2</title>
+    <link href="/src/style.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  </head>
+  <body class="">
+    <section class="bg-linear-to-b from-[#333333] to-[#1A1A1A] py-8">
+      <div class="container mx-auto px-[10px]">
+        <header class="flex justify-between  gap-[230px]">
+          <div>
+            <img src="/icons/logo.svg" alt="" class="w-[30px]" />
+          </div>
+          <div>
+            <img src="/icons/menu.svg" alt="" class="">
+          </div>
+
+          <nav class="hidden">
+            <ul>
+              <li>Услуги</li>
+              <li>Преимущества</li>
+              <li>Наши работы</li>
+              <li>Контакты</li>
+            </ul>
+
+            <div>
+              <a href="tel:+79999990990">+7 (999) 999-09-90</a>
+            </div>
+
+            <div>
+              <a href=""><img src="icons/whatsapp.svg" alt="" /></a>
+              <a href=""><img src="icons/telegram.svg" alt="" /></a>
+            </div>
+          </nav>
+        </header>
+
+        <div class="flex flex-col justify-center relative">
+          <!-- hero-content -->
+          <div class="text-white flex flex-col  gap-[240px] pt-[30px]">
+            <div class=" font-montserrat flex flex-col gap-[8px] justify-center">
+              <h1 class="text-xl font-extrabold leading-5 max-w-[238px]">Превосходство в обслуживании</h1>
+              <h2 class="font-semibold  text-base">Ваша машина в надежных руках!</h2>
+            </div>
+
+            
+            <div class="flex flex-col-reverse gap-[25px]">
+              <div class=" flex justify-center ">
+              <button class="py-[15px] px-[63px] bg-linear-to-b from-[#FF0000] to-[#C70000] font-semibold rounded-[10px]">ОСТАВИТЬ ЗАЯВКУ</button>
+              </div>
+              <div class="flex flex-col gap-[15px] items-center">
+              <div class="flex max-w-[290px] items-center pl-[15px] relative">
+                <img src="./public/icons/country-flag.svg" alt="" class="w-[35px] absolute items-center left-2 " />
+                <p class="border border-[#FFB72B] border-l-0 py-[10px] px-[35px]  text-[12px] rounded-[10px] font-semibold">Специально обученные механики</p>
+              </div>
+              <div class="flex max-w-[290px] pl-[20px] relative">
+                <img src="./public/icons/coin.svg" alt="" class=" w-[35px] absolute  left-3"  />
+                <p class="border border-[#FFB72B] border-l-0 py-[10px] px-[55px]  text-[12px] rounded-[10px] font-semibold">Только премиум качество</p>
+              </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="pt-[25px] flex items-center justify-center gap-[8px]">
+            <img src="./public/icons/scroll.svg" alt="" />
+            <p class="text-white font-medium text-[12px]">Листайте вниз</p>
+          </div>
+          <!-- hero-content-end -->
+
+          <div class="">
+            <h2 class="absolute text-white font-montserrat text-3xl font-extrabold absolute top-37 left-15 z-2">F812 SUPER</h2>
+            <img src="./public/icons/shadow-of-car.svg" alt="" class="absolute top-25 z-1 right-[20px] w-[326px]">
+            <img src="./public/images/hero-car-image.png" alt="" class="absolute top-40 z-1 right-[40px] w-[326px] " />
+            <img src="./public/images/hero-ferrari-icon.png" alt="" class="absolute top-27 right-[-10px] w-[186px] " />
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

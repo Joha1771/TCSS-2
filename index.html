@@ -6,78 +6,517 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>tcss-2</title>
     <link href="/src/style.css" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body class="">
+  <body class="font-montserrat text-white">
     <section class="bg-linear-to-b from-[#333333] to-[#1A1A1A] py-8">
       <div class="container mx-auto px-[10px]">
-        <header class="flex justify-between  gap-[230px]">
+        <header
+          class="flex justify-between gap-[230px] xl:gap-[50px] xl:justify-between xl:pt-[10px] "
+        >
           <div>
-            <img src="/icons/logo.svg" alt="" class="w-[30px]" />
+            <img src="/icons/logo.svg" alt="" class="w-[30px] xl:w-[80px]" />
           </div>
           <div>
-            <img src="/icons/menu.svg" alt="" class="">
+            <img src="/icons/menu.svg" alt="" class="xl:hidden" />
           </div>
 
-          <nav class="hidden">
-            <ul>
+          <nav class="hidden xl:flex xl:flex xl:gap-[200px]">
+            <ul class="xl:flex xl:gap-[40px] xl:items-center">
               <li>Услуги</li>
               <li>Преимущества</li>
               <li>Наши работы</li>
               <li>Контакты</li>
             </ul>
 
-            <div>
+            <div class="xl:flex xl:gap-[40px] xl:items-center">
               <a href="tel:+79999990990">+7 (999) 999-09-90</a>
-            </div>
-
-            <div>
-              <a href=""><img src="icons/whatsapp.svg" alt="" /></a>
-              <a href=""><img src="icons/telegram.svg" alt="" /></a>
+              <div class="xl:flex xl:gap-[20px]">
+                <a href=""><img src="icons/whatsapp.svg" alt="" /></a>
+                <a href=""><img src="icons/telegram.svg" alt="" /></a>
+              </div>
             </div>
           </nav>
         </header>
-
-        <div class="flex flex-col justify-center relative">
+        <div class="flex flex-col justify-center relative xl:flex">
           <!-- hero-content -->
-          <div class="text-white flex flex-col  gap-[240px] pt-[30px]">
-            <div class=" font-montserrat flex flex-col gap-[8px] justify-center">
-              <h1 class="text-xl font-extrabold leading-5 max-w-[238px]">Превосходство в обслуживании</h1>
-              <h2 class="font-semibold  text-base">Ваша машина в надежных руках!</h2>
+          <div
+            class="text-white flex flex-col gap-[240px] pt-[30px] xl:pt-[117px] xl:gap-[50px]"
+          >
+            <div
+              class="font-montserrat flex flex-col gap-[8px] justify-center xl:gap-[20px]"
+            >
+              <h1
+                class="text-xl font-extrabold leading-5 max-w-[238px] xl:text-[44px] xl:font-extrabold max-w-[1089px]"
+              >
+                Превосходство в обслуживании
+              </h1>
+              <h2 class="font-semibold text-base xl:text-[36px]">
+                Ваша машина в надежных руках!
+              </h2>
             </div>
 
-            
-            <div class="flex flex-col-reverse gap-[25px]">
-              <div class=" flex justify-center ">
-              <button class="py-[15px] px-[63px] bg-linear-to-b from-[#FF0000] to-[#C70000] font-semibold rounded-[10px]">ОСТАВИТЬ ЗАЯВКУ</button>
+            <div class="flex flex-col-reverse gap-[25px] xl:flex-col">
+              <div class="flex xl:pb-[60px]">
+                <button
+                  class="py-[15px] px-[67px] bg-linear-to-b from-[#FF0000] to-[#C70000] font-semibold rounded-[10px]"
+                >
+                  ОСТАВИТЬ ЗАЯВКУ
+                </button>
               </div>
-              <div class="flex flex-col gap-[15px] items-center">
-              <div class="flex max-w-[290px] items-center pl-[15px] relative">
-                <img src="./public/icons/country-flag.svg" alt="" class="w-[35px] absolute items-center left-2 " />
-                <p class="border border-[#FFB72B] border-l-0 py-[10px] px-[35px]  text-[12px] rounded-[10px] font-semibold">Специально обученные механики</p>
-              </div>
-              <div class="flex max-w-[290px] pl-[20px] relative">
-                <img src="./public/icons/coin.svg" alt="" class=" w-[35px] absolute  left-3"  />
-                <p class="border border-[#FFB72B] border-l-0 py-[10px] px-[55px]  text-[12px] rounded-[10px] font-semibold">Только премиум качество</p>
-              </div>
+              <div class="flex flex-col gap-[15px]">
+                <div
+                  class="flex max-w-[300px] pl-[15px] relative xl:max-w-[275px] xl:pl-[50px]"
+                >
+                  <img
+                    src="./public/icons/country-flag.svg"
+                    alt=""
+                    class="w-[35px] absolute items-center left-0 xl:w-[60px] xl:left-2"
+                  />
+                  <p
+                    class="border border-[#FFB72B] border-l-0 py-[10px] px-[30px] text-[12px] rounded-[10px] font-semibold xl:pr-10"
+                  >
+                    Специально обученные механики
+                  </p>
+                </div>
+                <div
+                  class="flex max-w-[300px] pl-[20px] relative xl:max-w-[275px] xl:pl-[30px]"
+                >
+                  <img
+                    src="./public/icons/coin.svg"
+                    alt=""
+                    class="w-[35px] absolute left-0 top-1 xl:w-[60px] xl:top-0 xl:left-2"
+                  />
+                  <p
+                    class="border border-[#FFB72B] border-l-0 py-[10px] px-[55px] text-[12px] rounded-[10px] font-semibold xl:pr-10"
+                  >
+                    Только премиум качество
+                  </p>
+                </div>
               </div>
             </div>
-
           </div>
-          <div class="pt-[25px] flex items-center justify-center gap-[8px]">
+          <div
+            class="pt-[25px] flex items-center pl-[80px] gap-[8px] xl:pt-[100px]"
+          >
             <img src="./public/icons/scroll.svg" alt="" />
             <p class="text-white font-medium text-[12px]">Листайте вниз</p>
           </div>
           <!-- hero-content-end -->
 
           <div class="">
-            <h2 class="absolute text-white font-montserrat text-3xl font-extrabold absolute top-37 left-15 z-2">F812 SUPER</h2>
-            <img src="./public/icons/shadow-of-car.svg" alt="" class="absolute top-25 z-1 right-[20px] w-[326px]">
-            <img src="./public/images/hero-car-image.png" alt="" class="absolute top-40 z-1 right-[40px] w-[326px] " />
-            <img src="./public/images/hero-ferrari-icon.png" alt="" class="absolute top-27 right-[-10px] w-[186px] " />
+            <h2
+              class="absolute text-white font-montserrat text-3xl font-extrabold top-37 left-15 z-2 xl:absolute xl:top-58 xl:left-110 xl:text-[80px] xl:z-1"
+            >
+              F812 SUPER
+            </h2>
+            <img
+              src="./public/icons/shadow-of-car.svg"
+              alt=""
+              class="absolute top-25 z-1 right-[20px] xl:top-70 xl:w-[700px] xl:right-[100px] xl:top-[180px] xl:z-0"
+            />
+            <img
+              src="./public/images/hero-car-image.png"
+              alt=""
+              class="absolute top-40 z-1 right-[40px] w-[326px] xl:absolute :w-[500px] xl:w-[900px] xl:top-[250px] xl:left-[350px] xl:z-2"
+            />
+            <img
+              src="./public/images/hero-ferrari-icon.png"
+              alt=""
+              class="absolute top-27 right-[-10px] w-[186px] xl:right-[0px] xl:w-[357px]"
+            />
           </div>
         </div>
       </div>
     </section>
+    <section class="bg-[#1A1A1A] pt-[60px]">
+      <div class="container mx-auto px-[10px] ">
+        <div
+          class="flex flex-col gap-[25px] border border-[#FF0000] xl:items-start rounded-[10px] px-[10px] py-[25px] bg-[url('/images/form-bg-image.png')] bg-no-repeat bg-bottom xl:bg-[url(/images/form-larg-bg-image.png)] xl:bg-right "
+        >
+          <div class="xl:flex xl:flex-col xl: justify-start">
+            <h3 class="text-center text-base font-medium text-[#FFB72B] xl:text-start">
+              Чтобы узнать точную <br class="xl:hidden" />
+              стоимость работ,
+            </h3>
+            <p class="text-center text-base font-semibold text-[#FFFFFF]">
+              запишитесь на бесплатную консультацию
+            </p>
+          </div>
+          <form
+            for="cta"
+            action=""
+            class="flex flex-col justify-center items-center gap-[10px] xl:flex-row"
+          >
+            <div>
+              <label for=""></label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Ваше имя"
+                class="bg-[#FFFFFF] pl-[10px] pr-[68px] py-[14px] rounded-[10px] outline-0 text-[#000]"
+              />
+            </div>
+            <div
+              class="bg-[#FFFFFF] flex gap-[10px] py-[14px] rounded-[10px] pl-[10px]"
+            >
+              <label for=""
+                ><img src="./public/icons/russia-flag.svg" alt=""
+              /></label>
+              <select name="country" id="country " class="text-[#FF0000]">
+                <option value="russia"></option>
+              </select>
+
+              <div>
+                <label for=""></label>
+                <input
+                  type="number"
+                  id="number"
+                  name="phoneNumber"
+                  placeholder="+7 (999) 999-99-99"
+                  class="outline-0 text-[#000]"
+                />
+              </div>
+            </div>
+            <button
+              class="py-[15px] px-[56px] bg-linear-to-b from-[#FF0000] to-[#C70000] font-semibold rounded-[10px] text-white"
+            >
+              ОСТАВИТЬ ЗАЯВКУ
+            </button>
+          </form>
+          <div>
+            <p
+              class="text-white font-medium text-[12px] font-montserrat text-center"
+            >
+              Оставляя заявку, вы даете согласие на обработку персональных
+              данных
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pt-[60px] bg-[#1A1A1A]">
+      <div class="container mx-auto px-[10px]">
+        <div>
+          <div>
+            <h3 class="font-extrabold text-[21px] text-white">Наши услуги</h3>
+            <p class="font-semibold text-[15px] text-white">
+              Снизу мы предоставили список наших услуг по разделам:
+            </p>
+          </div>
+          <div class="grid grid-cols-2 gap-x-[10px] xl:grid-cols-4">
+            <div class="card">
+              <img src="/images/services-1-image.png" alt="" />
+              <p class="card-text">ТЕХ.ОБСЛУЖИВАНИЕ</p>
+            </div>
+            <div class="card">
+              <img src="/images/services-2-image.png" alt="" />
+              <p class="card-text">ДИАГНОСТИКА</p>
+            </div>
+            <div class="card">
+              <img src="/images/services-3-image.png" alt="" />
+              <p class="card-text">ХОДОВАЯ ЧАСТЬ</p>
+            </div>
+            <div class="card">
+              <img src="/images/services-4-image.png" alt="" />
+              <p class="card-text">ТРАНСМИССИЯ</p>
+            </div>
+            <div class="card">
+              <img src="/images/services-5-image.png" alt="" />
+              <p class="card-text">ДВИГАТЕЛЬ</p>
+            </div>
+            <div class="card">
+              <img src="/images/services-6-image.png" alt="" />
+              <p class="card-text">ВЫХЛОПНАЯ СИСТЕМА</p>
+            </div>
+            <div class="card">
+              <img src="/images/services-7-image.png" alt="" />
+              <p class="card-text">РУЛЕВОЕ УПРАВЛЕНИЕ</p>
+            </div>
+            <div class="card">
+              <img src="/images/services-8-image.png" alt="" />
+              <p class="card-text">ТОПЛИВНА СИСТЕМА</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-[#1A1A1A] pt-[60px]">
+      <div class="container mx-auto px-[10px]">
+        <h3 class="pb-[40px] font-extrabold text-[21px] max-w-[184px]">
+          Почему стоит выбрать нас
+        </h3>
+        <div class="flex flex-col gap-[25px] xl:flex-row">
+          <div class="features-cards">
+            <img src="/icons/features-card1.svg" alt="" class="w-[40px]" />
+            <h4 class="features-cards-title">Заголовок преимущества</h4>
+            <p class="features-cards-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna
+            </p>
+          </div>
+          <div class="features-cards">
+            <img src="/icons/features-card2.svg" alt="" class="w-[40px]" />
+            <h4 class="features-cards-title">Заголовок преимущества</h4>
+            <p class="features-cards-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna
+            </p>
+          </div>
+          <div class="features-cards">
+            <img src="/icons/features-card3.svg" alt="" class="w-[40px]" />
+            <h4 class="features-cards-title">Заголовок преимущества</h4>
+            <p class="features-cards-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-[#1A1A1A] pt-[60px]">
+      <div class="container mx-auto px-[10px]">
+        <h3 class="font-extrabold text-[21px] pb-[40px]">Наши работы</h3>
+        <div class="xl:flex gap-[20px]">
+        <div class="flex flex-col gap-[8px] xl:max-w-[453px]"  >
+          <div
+            class="bg-[url('/images/about-card.png')] bg-no-repeat max-w-[300px] xl:max-w-[400px] rounded-2xl bottom-1 xl:bg-cover"
+          >
+            <div class="pt-[180px]">
+              <p
+                class="py-[10px] pl-[10px] bg-[#1A1A1ABF] backdrop-blur-xs font-semibold text-[15px] text-[#FF0000] rounded-b-xl"
+              >
+                Название работы
+              </p>
+            </div>
+          </div>
+          <div class="max-w-[300px] xl:max-w-[400px]">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna Lorem ipsum
+              dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna
+            </p>
+          </div>
+        </div>
+        <div class="hidden flex flex-col gap-[8px] xl:block"  >
+          <div
+            class="bg-[url('/images/about-card.png')] bg-no-repeat max-w-[300px] xl:max-w-[400px] rounded-2xl bottom-1"
+          >
+            <div class="pt-[180px]">
+              <p
+                class="py-[10px] pl-[10px] bg-[#1A1A1ABF] backdrop-blur-xs font-semibold text-[15px] text-[#FF0000] rounded-b-xl"
+              >
+                Название работы
+              </p>
+            </div>
+          </div>
+          <div class="max-w-[300px] xl:max-w-[400px]">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna Lorem ipsum
+              dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna
+            </p>
+          </div>
+        </div>
+        <div class="hidden flex flex-col gap-[8px] xl:block"  >
+          <div
+            class="bg-[url('/images/about-card.png')] bg-no-repeat max-w-[300px] xl:max-w-[400px] rounded-2xl bottom-1"
+          >
+            <div class="pt-[180px]">
+              <p
+                class="py-[10px] pl-[10px] bg-[#1A1A1ABF] backdrop-blur-xs font-semibold text-[15px] text-[#FF0000] rounded-b-xl"
+              >
+                Название работы
+              </p>
+            </div>
+          </div>
+          <div class="max-w-[300px] xl:max-w-[400px]">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna Lorem ipsum
+              dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna
+            </p>
+          </div>
+        </div>
+        </div>
+        <div class="flex gap-[25px] pt-[25px] pl-[100px]">
+          <img src="/icons/arrow-left.svg" alt="" />
+          <img src="/icons/arrow-right.svg" alt="" />
+        </div>
+        <div class="pt-[60px] ">
+          <h3>Список моделей</h3>
+          <div class="flex gap-[10px] xl:gap-[10px] ">
+            <div class="border border-[#FF0000] flex rounded-[10px] xl:w-[280px] xl:gap-[20px]">
+              <img src="./public/images/about-small-card1.png" alt="" />
+              <div class="flex flex-col gap-[4px] py-[11px] pr-[23px]">
+                <span class="text-[10px] xl:text-[24px] text-[#FF0000]">GTC4LUSSO</span>
+                <span class="text-[10px]">2016-2020</span>
+              </div>
+            </div>
+            <div class="border border-[#FF0000] flex rounded-[10px] xl:w-[280px] xl:gap-[20px]">
+              <img src="./public/images/about-small-card1.png" alt="" class="xl:max-w-[135px]" />
+              <div class="flex flex-col gap-[4px] py-[11px] pr-[10px]">
+                <span class="text-[10px] xl:text-[24px] text-[#FF0000]">PUROSANGUE</span>
+                <span class="text-[10px]">2022</span>
+              </div>
+            </div>
+            <div class="border border-[#FF0000] flex rounded-[10px] hidden xl:flex xl:w-[280px] xl:gap-[20px]">
+              <img src="./public/images/about-small-card1.png" alt="" />
+              <div class="flex flex-col gap-[4px] py-[11px] pr-[10px] ">
+                <span class="text-[10px] xl:text-[24px] text-[#FF0000]">PUROSANGUE</span>
+                <span class="text-[10px]">2022</span>
+              </div>
+            </div>
+            <div class="border border-[#FF0000] flex rounded-[10px] hidden xl:flex xl:w-[280px] xl:gap-[20px]" >
+              <img src="./public/images/about-small-card1.png" alt="" />
+              <div class="flex flex-col gap-[4px] py-[11px] pr-[10px]">
+                <span class="text-[10px] xl:text-[24px] text-[#FF0000]">PUROSANGUE</span>
+                <span class="text-[10px]">2022</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-[25px] pt-[25px] pl-[100px]">
+            <img src="/icons/arrow-left.svg" alt="" />
+            <img src="/icons/arrow-right.svg" alt="" />
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    <section class="bg-[#1A1A1A] pt-[60px]">
+      <div class="container mx-auto px-[10px] flex flex-col gap-[75px] "> 
+        <h3 class="font-extrabold text-[21px]">Контакты</h3>
+        <div class="xl:flex xl:flex-row gap-[100px]" >
+        <div class="flex flex-col gap-[40px] ">
+          <div class="flex gap-[15px]">
+            <img src="/icons/contact-card1-image.svg" alt="" />
+            <div class="flex flex-col gap-[10px]">
+              <span class="text-[12px] font-bold">Наш адрес:</span>
+              <span class="text-[12px] font-medium"
+                >Россия, г. Москва, улица Пушкина, дом 1, корпус 2</span
+              >
+            </div>
+          </div>
+          <div class="flex gap-[15px]">
+            <img src="/icons/contact-card2-image.svg" alt="" />
+            <div class="flex flex-col gap-[10px]">
+              <span class="text-[12px] font-bold">Номер телефона</span>
+              <span class="text-[12px] font-medium">+7 (999) 999-09-90</span>
+            </div>
+          </div>
+          <div class="flex gap-[15px]">
+            <img src="/icons/contact-card3-image.svg" alt="" />
+            <div class="flex flex-col gap-[10px]">
+              <span class="text-[12px] font-bold">Наш E-mail</span>
+              <span class="text-[12px] font-medium"
+                >example.email@gmail.com</span
+              >
+            </div>
+          </div>
+          <p class="text-[12px] font-extrabold">Мы в социальных сетях</p>
+          <div class="flex gap-[25px]">
+            <img src="/icons/whatsapp.svg" alt="" />
+            <img src="/icons/telegram.svg" alt="" />
+          </div>
+        </div>
+        <div
+          class="flex flex-col gap-[25px] border border-[#FF0000] rounded-[20px] px-[10px] py-[25px] shadow-[#ff0000] "
+        >
+          <div class="">
+            <h3 class="text-center text-[21px] font-extrabold pb-[20px]">
+              Оставьте заявку
+            </h3>
+            <p class="text-center text-base font-semibold text-[#FFFFFF]">
+              Заполните форму и мы Вам перезвоним!
+            </p>
+          </div>
+          <form
+            for="cta"
+            action=""
+            class="flex flex-col justify-center items-center gap-[10px]"
+          >
+            <div>
+              <label for=""></label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Ваше имя"
+                class="bg-[#FFFFFF] pl-[10px] pr-[68px] py-[14px] rounded-[10px] outline-0 text-[#000]"
+              />
+            </div>
+            <div
+              class="bg-[#FFFFFF] pl-[10px] py-[14px] pr-[5px] rounded-[10px] outline-0 text-[#000] gap-[101px] flex"
+            >
+              <label for="">Выберите услугу</label>
+              <select name="country" id="country " class="text-[#FF0000] pl-[]">
+                <option value="russia"></option>
+              </select>
+            </div>
+            <div
+              class="bg-[#FFFFFF] flex gap-[10px] py-[14px] rounded-[10px] pl-[10px]"
+            >
+              <label for=""
+                ><img src="./public/icons/russia-flag.svg" alt=""
+              /></label>
+              <select name="country" id="country " class="text-[#FF0000]">
+                <option value="russia"></option>
+              </select>
+
+              <div>
+                <label for=""></label>
+                <input
+                  type="number"
+                  id="number"
+                  name="phoneNumber"
+                  placeholder="+7 (999) 999-99-99"
+                  class="outline-0 text-[#000]"
+                />
+              </div>
+            </div>
+            <button
+              class="py-[15px] px-[56px] bg-linear-to-b from-[#FF0000] to-[#C70000] font-semibold rounded-[10px] text-white"
+            >
+              ОСТАВИТЬ ЗАЯВКУ
+            </button>
+          </form>
+          <div>
+            <p
+              class="text-white font-medium text-[12px] font-montserrat text-center"
+            >
+              Оставляя заявку, вы даете согласие на обработку персональных
+              данных
+            </p>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-[#1A1A1A] pt-[60px]">
+      <div class="container mx-auto px-[10px] flex flex-col gap-[20px]">
+        <div class="flex flex-col gap-[20px]">
+          <img src="/icons/footer-logo.svg" alt="" class="w-[111px]" />
+          <span>© 2023 Company name</span>
+          <span>Все права защищены</span>
+        </div>
+        <div class="flex flex-col gap-[20px]">
+          <span>Услуги</span>
+          <span>Преимущества</span>
+          <span>Наши работы</span>
+          <span>Контакты</span>
+        </div>
+        <div class="flex flex-col gap-[20px]">
+          <img src="/icons/footer-arrow.svg" alt="" class="w-[79px]" />
+          <span>Политика конфиденциальности</span>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

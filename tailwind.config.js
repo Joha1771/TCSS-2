@@ -6,9 +6,8 @@ export default {
     screens: {
       xs: "100%",
       sm: "640px",
-      md: "768px",
-      lg: "1024px",
-      "2xl": "1600px",
+      lg: "1172px",
+      xl: "1280px",
     },
     extend: {
       container: {
@@ -18,6 +17,9 @@ export default {
       fontFamily: {
             montserrat: ['Montserrat', 'sans-serif'], // Fallback to sans-serif
           },
+          boxShadow: {
+            'primary': '0px 0px 23px 0px #9494942B',
+          }
     },
   },
   plugins: [],

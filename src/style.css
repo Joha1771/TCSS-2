@@ -1,1 +1,21 @@
 @import "tailwindcss";
+.font-montserrat {
+    font-family: Montserrat, sans-serif;
+}
+
+.card{
+    @apply flex flex-col gap-[10px] ;
+    
+}
+.card-text{
+    @apply font-semibold text-[12px]; 
+}
+.features-cards{
+    @apply gap-[8px] flex flex-col;
+}
+.features-cards-title{
+    @apply font-semibold text-[15px];
+}
+.features-cards-description{
+     @apply font-medium text-[12px];
+}
